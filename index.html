@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Marvel API Test</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="MarvelApp">
+        <div ng-controller="MController1">
+            <h1>The Good and The Dastardly</h1>
+            <h2>by: {{ person.name }}, age: {{ person.age }}</h2>
+            <input type="text" ng-model="findem" placeholder="Type to Filter by Input">
+            <p> {{ findem }}</p>
+            <div  class="wrapper">
+                <ul class="listPanel">
+                    <li class="character" ng-repeat="hero in heroes | filter: findem" ng-click="viewDetail">
+                        <img src=" {{ hero.thumbnail.path }}/standard_medium.{{ hero.thumbnail.extension}} ">
+                        <p>{{ hero.name }}</p>
+                    </li>
+                </ul>
+            
+                <main class="detailPanel">
+                    <h1>DEMO</h1>
+                    <h1> {{ hero.name }} </h1>
+                </main>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>Data provided by Marvel. © 2014 Marvel</p>
+    </footer>
+</html>

@@ -1,0 +1,39 @@
+/////// DEFAULTS ///////
+body {
+    background-color: black;
+    color: red;
+    margin: 0;
+    padding: 5% 10% 5% 10%;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+/////// LIST SECTION ///////
+.listPanel{
+    height: auto;
+    width: 33%;
+    margin: 10px;
+    
+    border: 1px solid red;
+}
+.character {
+    margin: 10px;
+    
+    border: 2px solid red;
+}
+////// INDIVIDUAL DETAIL SECTION ///////
+.detailPanel {
+    margin: 10px;
+    width: 66%;
+    
+    border: 1px solid red;
+}
+
