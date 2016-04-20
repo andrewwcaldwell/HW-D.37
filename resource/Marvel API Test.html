@@ -9,6 +9,7 @@
     <header>
         <img src="./resource/marvel.jpg" class="logo">
         <h1>Universe Explorer</h1>
+        <p> Powered by Marvel API</p>
     </header>
     <body ng-app="MarvelApp">
         <div ng-controller="MController1">
@@ -25,10 +26,9 @@
                 <main class="detailPanel">
                     <img src="{{indy.thumbnail.path}}/landscape_incredible.{{indy.thumbnail.extension}}" class="big">
                     <div class="upper">
-                        <h4>Character Profile:</h4>
                         <h2>{{ indy.name }}</h2>
                         <p>{{ indy.description }}</p>
-                        <h4> Events Related to Character:</h4>
+                        <p> Events Related to {{ indy.name }}</p>
                         <ul ng-repeat="event in indy.events.items">
                             <li>{{ event.name }}</li>
                         </ul>
