@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Teko:500);
 
@@ -7,7 +8,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #343333;
+    background-color: black;
     opacity: .99;
     
     height: 140px;
@@ -17,10 +18,10 @@ header {
     margin: 20px;
 }
 h1 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 80px;
-    color: #FF0000;
-    text-shadow: 2px 2px #FFFFFF;
+    color: #FFFFFF;
+    text-shadow: 2px 2px darkgray;
     margin: 10px;
 }
 h2 {
@@ -91,7 +92,12 @@ p.list {
     margin: 10px;
     padding: 5px;
     
-    //border: 1px solid lightgray;
+    border: 1px solid black;
+}
+.character :hover {
+    color: red;
+    cursor: pointer;
+    
 }
 img.small {
     border: 1px solid black;
